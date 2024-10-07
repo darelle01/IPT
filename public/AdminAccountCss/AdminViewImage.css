@@ -1,0 +1,227 @@
+.Mid{
+    display: flex;
+    width: 80%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+}
+.ImageViewForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: white;
+    width: 1400px;
+    height: fit-content;
+}
+/* Form Title */
+.FormTitle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+h3{
+    font-style: italic;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+/* Image Area */
+.ImageArea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 10px;
+    width: 98.5%;
+    max-height: 650px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+.image-gallery{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 10 0%;
+    height: 100%;
+}
+.ImageLog {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px; 
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+}
+.ViewAndDeleteBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px; 
+    box-sizing: border-box;
+}
+
+.BtnArea{
+    display: flex;
+    justify-content: center;
+    width: 98.5%;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.BackBtn{
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+}
+.BackBtn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.DeleteImages{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+}
+.DeleteImages:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.btn-primary {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    color: black;
+}    
+.btn-primary:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.btn-danger{
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+.btn-danger:hover{
+    transform: scale(1.1);
+    color: white;
+}
+/* Add New Image Collapse */
+.card-body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+
+}
+.form-label{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.form-control{
+    border: 1px solid black;
+}
+/* No Image Warning */
+.NoImageWarningArea{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.NoImagewarning{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+/* Deletion confirmation */
+.NoBtn{
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    color: black;
+}
+.NoBtn:hover{
+    transform: scale(1.1);
+    color: white;
+    
+}
+
+.Updload,.closeBtn {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    width: fit-content;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    color: black;
+}    
+.Updload:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.closeBtn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.modal-body,.modal-title{
+    text-align: center;
+}
+.alert-success{
+    text-align: center;
+    width: 98%;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}

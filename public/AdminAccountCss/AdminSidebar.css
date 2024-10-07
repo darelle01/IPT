@@ -1,0 +1,365 @@
+.LeftSide{
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0075FF
+    , #42D87E);
+    border: 1px solid black;
+}
+.LogoArea {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-image: url('/images/LogoVr1.png');
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.ProfilePictureArea{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.profilepicture{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.NameArea{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: italic;
+}
+/* Dashboard Area */
+.DashboardArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.Dashboard{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.Dashboard:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-chart-line{
+    margin-left: -20px;
+    margin-right: 10px;
+}
+/* Create Account */
+.CreateAccountArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.CreateAccount{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.CreateAccount:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-user-plus{
+    margin-right: 10px;
+}
+/* Account List */
+.AccountListArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.AccountList{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.AccountList:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-users-rectangle{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+/* New Patient */
+.NewPatientArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.NewPatient{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.NewPatient:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-user-injured{
+    margin-left: -20px;
+    margin-right: 10px;
+}
+/* Patient Table */
+.PatientTableArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.PatientTable{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.PatientTable:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-hospital-user{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+/* Add Consultation */
+.AddConsultationArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.AddConsultation{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.AddConsultation:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-book-medical{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+/* Contain Area */
+.contain{
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+/* Settings Area */
+.SettingsArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.Settings{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.Settings:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-gear{
+    margin-left: -70px;
+    margin-right: 10px;
+}
+/* Logout Area */
+.LogoutArea{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.Logout{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    color: white;
+}
+.Logout:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.fa-right-from-bracket{
+    margin-left: -70px;
+    margin-right: 10px;
+}
+/* SideBar popup */
+#NavBarArea{
+    margin-top: 1px;
+    width: 250px;
+    height: 100vh;
+    overflow: auto;
+    transition: 0.1s ease-in-out;
+    visibility: visible;
+}
+#NavBarArea.active{
+    visibility: visible;
+    width: 100px;
+    height: 100vh;
+    .ProfilePictureArea,.NameArea{
+        display: none;
+    } 
+    .LogoArea{
+        margin-bottom: -50px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-image: url('/images/baliwag logo.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .ButtonName{
+        display: none;
+    }
+    .DashboardArea{
+        margin-top: 300px;
+    }
+    .fa-chart-line,.fa-user-plus,
+    .fa-users-rectangle,.fa-user-injured,
+    .fa-hospital-user,.fa-gear,
+    .fa-right-from-bracket,.fa-book-medical{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(88, 25, 25, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+

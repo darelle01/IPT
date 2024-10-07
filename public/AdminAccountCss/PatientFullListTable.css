@@ -1,0 +1,96 @@
+.PatientFullListTableArea{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 98%;
+    height: fit-content;
+    max-height: 600px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    overflow-y: auto;
+}
+.PatientTableGenerator{
+    width: 100%;
+    height: 30px;
+}
+/* label of the table row*/
+.PN{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.LN{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.FN{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.MN{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.AgeVal{
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.GenderVal{
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.PNo{
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.AddressVal{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+.ActionVal{
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    background-color: #E5E5E5;
+}
+td,th{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.warn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.PatientTableGenerator tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.PatientTableGenerator tr:nth-child(odd) {
+    background-color: #E5E5E5;
+}

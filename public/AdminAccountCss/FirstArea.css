@@ -1,0 +1,293 @@
+.FirstArea{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ThisMonthPatientCount{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px;  
+}
+.ThisMonthPatientCountUpperLabel{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ThisMonth{
+    font-size: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.ThisMonthPatientCountVal{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.FinalCountThisMonth{
+    font-size: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.ThisMonthPatientCountLowerLabel{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Totalnumber{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.PieChartLabelArea{
+    margin-left: 10px;
+    width: 271px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px; 
+}
+.PieChartLabel{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px; 
+    justify-content: center;
+}
+.ThisMonthPieChart{
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+#Month{
+    margin-top: 20px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+#Year{
+    margin-top: 5px;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.PieChartFigure{
+    width: 380px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px; 
+}
+.HighestConsultationArea{
+    margin-left: 10px;
+    width: fit-content;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px; 
+    text-align: center;
+}
+.HighestConsultationLabel1{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.HighestConsultationValue{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    min-height: 135px;
+    height: fit-content;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.HighestConsultation{
+    font-size: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.HighestConsultationPercentage{
+    margin-top: 5px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.HighestConsultationLabel2{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    height: fit-content;
+    max-height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LowestConsultationArea{
+    margin-left: 10px;
+    width: fit-content;
+    height: 100%;
+    border-radius: 20px;    
+    box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px; 
+    text-align: center;
+}
+.LowestConsultationLabel1{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.LowestConsultationValue{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    min-height: 135px;
+    height: fit-content;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.LowestConsultation{
+    font-size: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.LowestConsultationPercentage{
+    margin-top: 5px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.LowestConsultationLabel2{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    height: fit-content;
+    max-height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}

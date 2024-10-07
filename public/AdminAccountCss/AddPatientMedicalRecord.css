@@ -1,0 +1,381 @@
+.AddPatientMedicalRecordArea{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    width: 1470px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+.AddPatientMedicalRecord{
+    display: flex;
+    flex-direction: column;
+    width: 1520px;
+    height: fit-content;
+}
+.FormTitle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+/* Medical Logs Input Area */
+.MedicalLogsInputArea{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+/* Medical Logs Label */
+.MedicalLogsLabels{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #CBCBCB;
+}
+/* Patient Number Area  */
+.PatientNoArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.PatientNo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Consultation Area */
+.ConsultationArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.Consultation{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Remarks Area */
+.RemarksArea{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    height: 100%;
+}
+.Remarks{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Date Of Check-up Area */
+.DateOfConsultationArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.DateOfConsultation{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Date Of Upload Area */
+.DateOfUploadArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.DateOfUpload{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Files Area */
+.FilesArea{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    height: 100%;
+}
+.Files{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Action Area */
+.ActionArea{
+    display: flex;
+    width: 110px;
+    height: 100%;
+}
+.Action{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* ---------------------------------------------------------------- */
+/* Medical Log Input */
+.MedicalLogInput{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+}
+/* Patient Number Value */
+.PatientNoInputArea{
+    display: flex;
+    margin-right: 10px;
+    width: 200px;
+    height: 100%;
+}
+.PatientNoValue{
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    pointer-events: none;
+}
+/* Consultation Value */
+.ConsultationInputArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    max-height: 100px;
+}
+.ConsultationValue{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Remarks Value */
+.RemarksInputArea{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    max-height: 100px;
+}
+.RemarksValue{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* Date Of Check-up Value */
+.DateOfConsultationInputArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.DateOfCheckUpValue{
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 15px;
+    width: 100%;
+    height: 25px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+/* Date Of Upload Value */
+.DateOfUploadInputArea{
+    margin-right: 10px;
+    display: flex;
+    width: 200px;
+    height: 100%;
+}
+.DateOfUploadValue{
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 35px;
+    width: 100%;
+    height: 25px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    pointer-events: none;
+}
+/* File Value */
+.FileInputArea{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    height: 100%;
+}
+.FileUploadValue{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 90%;
+    height: 25px;
+    font-size: 15px;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+/* Action Slot */
+.ActionBtnArea{
+    display: flex;
+    width: 110px;
+    height: 100%;
+}
+.ActionBtn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+.ActionBtn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+/* ------------------------------------------------------------------------- */
+.ErrorArea{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.PatientNumberError{
+    display: flex;
+    margin-right: 10px;
+    width: 200px;
+    height: fit-content;
+}
+.ConsultationError{
+    display: flex;
+    margin-right: 10px;
+    width: 200px;
+    height: 100%;
+}
+.RemarksError{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    height: 100%;
+}
+.DateOfCheckupError{
+    display: flex;
+    margin-right: 10px;
+    width: 200px;
+    height: 100%;
+}
+.DateOfUploadError{
+    display: flex;
+    margin-right: 10px;
+    width: 200px;
+    height: 100%;
+}
+.FilesError{
+    margin-right: 10px;
+    display: flex;
+    width: 250px;
+    height: 100%;
+}
+/* View Medical Btn */
+.RedirectBtn{
+    display: flex;
+}
+.ViewMedicalLogs{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+    background-color: lightgreen;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ViewMedicalLogs:hover{
+    transform: scale(1.1);
+}
+/* success */
+.alert-success{
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+}

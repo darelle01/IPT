@@ -1,0 +1,498 @@
+.Mid{
+    display: flex;
+    width: 80%;
+    height: 99vh;
+    flex-direction: column;
+}
+.PatientFullBasicInformation{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 1200px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.TitleArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* Basic Info Area */
+.BasicInfoArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* Full Name */
+.FullNameLabel{
+    width: 100%;
+    height: 40px;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: row;
+}
+.FullNameValue{
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    background-color: #00A3FF;
+    display: flex;
+    flex-direction: row;
+}
+/* Last Name */
+.LastNameArea{
+    display: flex;
+    margin-left: 50px;
+    width: 420px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.LastNameLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* First Name */
+.FirsttNameArea{
+    display: flex;
+    width: 500px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.FirstNameLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Middle Name */
+.MiddleNameArea{
+    display: flex;
+    margin-right: 50px;
+    width: 500px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.MiddleNameLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Full Name Value */
+.LastNameValue,.FirstNameValue,.MiddleNameValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* ---------------------------------------------------------- */
+/* Birthdate Age And Gender */
+.BirthdateAgeGenderArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.BirthdateAgeGenderValue{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: #00A3FF;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Birthdate Age And Gender Label*/
+.BirthdateAgeGenderLabel{
+    width: 100%;
+    height: 40px;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: row;
+}
+/* Birthdate */
+.BirthdateArea{
+    display: flex;
+    margin-left: 50px;
+    width: 420px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.BirthdateLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Age */
+.AgeArea{
+    display: flex;
+    width: 500px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.AgeLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Gender */
+.GenderArea{
+    display: flex;
+    margin-right: 50px;
+    width: 500px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.GenderLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Birthdate Age and Gender Value */
+.BirthdateValue,.AgeValue,.GenderValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* ------------------------------------------------------------------ */
+/* Address And Contact */
+.AddressContactArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.AddressContactLabel{
+    width: 100%;
+    height: 40px;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: row;
+}
+/* Address */
+.HouseNoArea{
+    display: flex;
+    margin-left: 50px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.HouseNo{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Street */
+.StreetArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.Street{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Barangay */
+.BarangayArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.Barangay{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Municipality */
+.MunicipalityArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.Municipality{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Province */
+.ProvinceArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.Province{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* --------------------------------------------------- */
+/* Address Contact Value  */
+.AddressContactValue{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5px;
+    background-color: #00A3FF;
+    display: flex;
+    flex-direction: row;
+    
+}
+/* Address */
+.HouseNoArea{
+    display: flex;
+    margin-left: 50px;
+    width: 150px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.HouseNoValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* Street */
+.StreetArea{
+    display: flex;
+    margin-left: 25px;
+    width: 250px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.StreetValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* Barangay */
+.BarangayArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.BarangayValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* Municipality */
+.MunicipalityArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.MunicipalityValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* Province */
+.ProvinceArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.ProvinceValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* ------------------------------------------------------------------- */
+/* Contact and Email */
+.ContactAndEmailArea,.PatientNumberandPhilhealthArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ContactAndEmailLabel,.PatientNumberandPhilhealthLabel{
+    width: 100%;
+    height: 40px;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: row;
+}
+/* Contact */
+.ContactArea,.PatientNumberArea{
+    display: flex;
+    margin-left: 50px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Conatact,.PatientNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* email */
+.EmailArea,.PhilHealthArea{
+    display: flex;
+    margin-left: 25px;
+    width: 200px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.Email,.PhilHealthNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* ------------------------------------------------------------------- */
+/* Contact and Email Value  */
+.ContactAndEmailValue,.PatientNumberandPhilhealthValue{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: #00A3FF;
+    display: flex;
+    flex-direction: row;
+    
+}
+/* Contact */
+.ContactArea{
+    display: flex;
+    margin-left: 50px;
+    width: 150px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ConatactValue,.PatientNumberValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* email */
+.EmailArea{
+    display: flex;
+    margin-left: 25px;
+    width: 250px;
+    height: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.EmailValue,.PhilHealthNumberValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;font-size: 23px;
+}
+/* Button Area */
+.ButtonArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+.update{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+.update:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Alert Info */
+
+.alert-info {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: white;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}

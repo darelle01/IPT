@@ -1,0 +1,130 @@
+.modal{
+    height: fit-content;
+}
+.modal-content{
+    border: 0.5px solid black;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.modal-header{
+    background-color: #00A3FF;
+}
+.UpdateForm{
+    display: flex;
+    flex-direction: column;
+}
+/* Consultation Update Area */
+.ConsultationUpdateArea{
+    display: flex;
+    margin-bottom: 15px;
+}
+.ConsultationUpdateLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.ConsultationUpdateValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Remarks Update Area */
+.RemarksUpdateArea{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+.RemarksUpdateLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.RemarksUpdateValue{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    resize: none;
+    text-align: start;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Date of Check-up */
+.DateOfConsultationUpdateArea{
+    display: flex;
+    margin-bottom: 15px;
+}
+.DateOfConsultationUpdate{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.DateOfConsultation{
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Date of Upload */
+.DateOfUploadUpdateArea{
+    display: flex;
+    margin-bottom: 15px;
+}
+.DateOfUploadUpdate{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.DateOfUpload{
+    border: 2px solid black;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.SaveChanges,.close{
+    margin: 10px;
+    width: fit-content;
+}
+.error{
+    display: flex;
+    margin-bottom: 15px;
+}

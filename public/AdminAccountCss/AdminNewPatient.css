@@ -1,0 +1,777 @@
+.Mid{
+    display: flex;
+    width: 80%;
+    height: 99vh;
+    justify-content: center;
+}
+.NewPatientForm{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 1050px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.FormNameArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+h2{
+    margin-left: 50px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+/* Patient ID */
+.PatientIDArea{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+}
+.PatientID{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* error area */
+.PatientIDerrorArea{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    width: 100%;
+    height: 33px;
+}
+.PatientID-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    color: red;
+
+}
+/* Title Area */
+.BasicInfoArea,.AddressAndContactArea,.PhilhealthArea{
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(93, 214, 56, 0.671);
+}
+.BasicInfoLabel,.AddressAndContactLabel,.PhilhealthLabel{
+    display: flex;
+}
+h3{
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Basic Information 1 */
+.BasicInfoInputArea,.AddressAndContactInputArea.PhilhealthNumberInputArea{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Last Name Area */
+.LastNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.LastNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.LastName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.LastName::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.LastNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.LastName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* First Name Area */
+.FirstNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.FirstNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.FirstName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.FirstName::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.FirstNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.FirstName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Middle Name Area */
+.MiddleNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.MiddleNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.MiddleName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.MiddleName::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.MiddleNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.MiddleName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Basic Information 2 */
+.BasicInfoInputArea2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Birthdate Area */
+.BirthdateArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.BirthdateInput{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+.BirthdateLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.Birthdate{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 150px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.BirthdateMiddleNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Birthdate-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Age Area */
+.AgeArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 80px;
+}
+.AgeInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Age{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 100px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Age::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.AgeErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Age-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Gender Area */
+.GenderArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.GenderInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Gender{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 130px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Gender::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.GenderErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Gender-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area */
+.AddressAndContactInputArea{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* House Number Area */
+.HouseNumberArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.HouseNumberInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.HouseNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.HouseNumber::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.HouseNumberErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.HouseNumber-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Street Area */
+.StreetArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.StreetInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Street{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Street::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.StreetErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Street-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Barangay Area */
+.BarangayArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.BarangayInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Barangay{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Barangay::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.BarangayErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Barangay-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area 2*/
+.AddressAndContactInputArea2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Municipality Area */
+.MunicipalityArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.MunicipalityInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Municipality{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Municipality::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.MunicipalityErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Municipality-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Province Area */
+.ProvinceArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.ProvinceInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Province{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Province::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.ProvinceErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Province-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area 3*/
+.AddressAndContactInputArea3{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Contact Area */
+.ContactNumberArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.ContactNumberInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.ContactNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    width: 175px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius:0 5px 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: visible;
+}
+.ContactNumber:focus{
+    outline: none;
+}
+.PhCode{
+    margin-top: auto;   
+    margin-bottom: auto;
+    margin-left: 50px;
+    padding-left: 5px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid black ;
+    border-right: none;
+    border-radius: 5px 0 0 5px;   
+    background: url('/images/Ph-Flag.png') no-repeat center;
+    background-size: 23px 20px;
+    background-color: white;
+}
+.Code{
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 42px;
+    height: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    visibility: visible;
+    background-color: white;
+}
+.ContactNumber::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.ContactNumberErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.ContactNumber-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* email Area */
+.emailArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.emailInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.email{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.email::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.emailErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.email-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* PhilHealth Area */
+.PhilhealthNumberArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.PhilhealthNumberInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.PhilhealthNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.PhilhealthNumber::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+/* error area */
+.PhilhealthNumberErrorArea{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    width: 100%;
+    height: 33px;
+}
+.PhilhealthNumber-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    color: red;
+
+}
+/* Save Btn Area */
+.SaveBtnArea{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+.Save{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.Save:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.alert-success{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
