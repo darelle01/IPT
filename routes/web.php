@@ -28,7 +28,6 @@ use App\Http\Controllers\ViewMedicalImagesController;
 use App\Http\Controllers\ViewPatientRecordController;
 use App\Http\Controllers\AdminCreateAccountController;
 use App\Http\Controllers\AdminCreateAccountBtnController;
-use App\Http\Controllers\FetchConsultaitonListController;
 use App\Http\Controllers\ViewMedicalLogsImagesController;
 
 
@@ -41,7 +40,7 @@ Route::post('/Login-Page',[AdminLoginBtnController::class,'AdminLoginBtn'])->nam
 Route::get('/Create-Account',[AdminCreateAccountController::class,'ViewAdminCreateAccount'])->name('Admin.Create');
 Route::post('/Create-Account',[AdminCreateAccountBtnController::class,'CreateAccountBtn'])->name('Admin.Store');
 
-Route::get('/RHU-Dashboard', [DashboardController::class, 'ShowDashboard'])->name('Admin.Dashboard');
+Route::get('/RHU-Dashboard', [DashboardController::class, 'ShowDashboard'])->middleware('AdminMiddle:Staff')->name('Admin.Dashboard');
 
 Route::get('/New-Patient',[AdminNewPatient::class,'ViewAdminNewPatient'])->name('Admin.New');
 Route::post('/New-Patient',[AdminSaveBtnController::class,'AdminSaveBtn'])->name('Admin.Save');
