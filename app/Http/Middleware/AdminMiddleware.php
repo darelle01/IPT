@@ -27,7 +27,7 @@ class AdminMiddleware
             }
         }
         else
-        {
+        {   
             return redirect()->route('Login');
         }
         

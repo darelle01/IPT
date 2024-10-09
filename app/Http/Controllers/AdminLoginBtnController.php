@@ -25,6 +25,7 @@ class AdminLoginBtnController extends Controller
 
             
             if ($user->Position === 'Admin') {
+                $request->session()->regenerate();
                 return redirect()->route('Admin.Dashboard')->with('user', $user);
             } else {
                 Auth::logout();

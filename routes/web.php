@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SaveBtnController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginPageController;
+use App\Http\Controllers\LogOutBtnController;
 use App\Http\Controllers\DeleteFileController;
 use App\Http\Controllers\SeemoreBtnController;
 use App\Http\Controllers\UpdateFileController;
@@ -32,15 +33,23 @@ use App\Http\Controllers\ViewMedicalLogsImagesController;
 
 
 // IPT System Routes
+
+// Guest Only
+Route::middleware('guest')->group(function () {
 Route::get('/Login-Page',[LoginPageController::class,'ViewLoginPage'])->name('Login');
 Route::post('/Login-Page',[AdminLoginBtnController::class,'AdminLoginBtn'])->name('Login.Process');
-
+});
 
 // Admin Only
-Route::get('/Create-Account',[AdminCreateAccountController::class,'ViewAdminCreateAccount'])->name('Admin.Create');
-Route::post('/Create-Account',[AdminCreateAccountBtnController::class,'CreateAccountBtn'])->name('Admin.Store');
+Route::middleware(['auth','AdminMiddle:Admin'])->group(function () {
+    Route::get('/Create-Account',[AdminCreateAccountController::class,'ViewAdminCreateAccount'])->name('Admin.Create');
+    Route::post('/Create-Account',[AdminCreateAccountBtnController::class,'CreateAccountBtn'])->name('Admin.Store');
+    Route::get('/Log-out', [LogOutBtnController::class, 'LogoutBtn'])->name('Log-Out');
+});
 
-Route::get('/RHU-Dashboard', [DashboardController::class, 'ShowDashboard'])->middleware('AdminMiddle:Staff')->name('Admin.Dashboard');
+
+// Employee Only
+Route::get('/RHU-Dashboard', [DashboardController::class, 'ShowDashboard'])->name('Admin.Dashboard');
 
 Route::get('/New-Patient',[AdminNewPatient::class,'ViewAdminNewPatient'])->name('Admin.New');
 Route::post('/New-Patient',[AdminSaveBtnController::class,'AdminSaveBtn'])->name('Admin.Save');

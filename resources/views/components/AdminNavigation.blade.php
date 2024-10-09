@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/sass/app.scss','resources/js/app.js'])
     {{-- Bootstrap --}}
@@ -101,10 +101,12 @@
                     </button>
                 </div>  
                 <div class="LogoutArea">
-                    <button class="Logout">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        <span class="ButtonName">Logout</span>
-                    </button>
+                    <form action="{{route('Log-Out')}}" class="">
+                        <button class="Logout">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="ButtonName">Logout</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>{{-- Left Side --}}
