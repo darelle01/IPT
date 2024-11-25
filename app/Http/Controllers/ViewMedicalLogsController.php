@@ -20,11 +20,16 @@ class ViewMedicalLogsController extends Controller
         $EncryptViewFullMedicalLogs = Crypt::encrypt($ViewFullMedicalLogs);
         $EncryptMedicalLogs = Crypt::encrypt($MedicalLogs);
 
+        $PatientConsultation = $MedicalLogs->collect()->unique('Consultation');
 
         session(['EncryptViewFullMedicalLogs' => $EncryptViewFullMedicalLogs,
                 'EncryptMedicalLogs' => $EncryptMedicalLogs,
-                'getAllConsultation' => $getAllConsultation]);
+                'getAllConsultation' => $getAllConsultation,
+                'PatientConsultation' => $PatientConsultation]);
 
-        return redirect()->route('Admin.ViewMedicalLogsRecords');
+        return redirect()->route('Admin.ViewMedicalLogsRecords',[
+            'data' => urlencode($EncryptMedicalLogs), 
+            'data2' => urlencode($getAllConsultation),
+            'data3' => urlencode($PatientConsultation)]);
     }
 }

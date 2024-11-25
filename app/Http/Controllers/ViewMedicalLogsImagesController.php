@@ -20,7 +20,7 @@ class ViewMedicalLogsImagesController extends Controller
         session(['EncryptfilePaths' => $EncryptfilePaths,
                 'PatientNumber' => $PatientNumber,
                 'id' => $id]);
-        return redirect()->route('Admin.ViewMedicalRecords');
+        return redirect()->route('Admin.ViewMedicalRecords', ['data' => urlencode($EncryptfilePaths), 'data2' => urlencode($PatientNumber), 'data3' => urlencode($id)]);
     }
     
 }

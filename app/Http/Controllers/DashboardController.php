@@ -38,6 +38,7 @@ class DashboardController extends Controller
 
     public function ShowDashboard()
     {
+
         // Get highest consultation ------------------------------------------------------------------------------------------------------------------
         $CurrentTopConsul = $this->CurrentHighestConsul->GetThisMonthHighestConsultation();
 
@@ -85,11 +86,10 @@ class DashboardController extends Controller
             // Handle the case where $CurrentBottomConsul is not an object or property doesn't exist
             $BotDifference = 'N/A'; // or another fallback value
         }
-        
-        
 
         // Total per Month
         $OverAllPerMonth = $this->totalPerMonth->TotalForEveryMonth();
+
 
         return view('AdminPages.RHUDashboard', [
             // Highest Consultation and its Total Area -------------------------------------------------------------------------------------------------

@@ -51,6 +51,6 @@ class AddImageIndexController extends Controller
             session(['EncryptfilePaths' => $EncryptfilePaths,
                     'PatientNumber' => $PatientNumber,
                     'id' => $id]);
-            return redirect()->route('Admin.ViewMedicalRecords')->with('Upload', 'Images uploaded successfully!');
+            return redirect()->route('Admin.ViewMedicalRecords',['data' => urlencode($EncryptfilePaths), 'data2' => urlencode($PatientNumber), 'data3' => urlencode($id)])->with('Upload', 'Images uploaded successfully!');
             }
 }

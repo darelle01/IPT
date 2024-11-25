@@ -1,0 +1,392 @@
+.Mid{
+    display: flex;
+    width: 80%;
+    height: 99vh;
+    flex-direction: column;
+}
+.SettingsProfileArea{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+.SettingsTitle{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+h2{
+    margin-left: 50px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.ProfileSettingsArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+}
+.ProfilePictureArea{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.profilepicture{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+.ProfileSettingsTitle {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%;
+    height: 60px;
+    border-bottom: 2px solid black; 
+}
+
+h3{
+    margin-left: 50px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.BasicInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ProfilePicArea{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.ProfilePictureArea,.profilepicture{
+    height: 120px;
+    width: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ProfilePicBtns{
+    display: flex;
+    width: 80%;
+}
+.UploadArea,.DeleteArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* info area */
+.InfoArea{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+.FirstRow{
+    margin-left: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.LastNameLabel,.FirstNameLabel,.MiddleNameLabel{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.SecondRow{
+    margin-left: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.LastName,.FirstName,.MiddleName{
+    margin-top: 3px;
+    text-align: start;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.ThirdRow{
+    margin-left: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.BirthdateLabel,.AgeLabel,.GenderLabel{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.FourthRow{
+    margin-left: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Birthdate,.Age,.Gender{
+    margin-top: 5px;
+    text-align: start;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Birthdate{
+    width: 155px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Age{
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Gender{
+    width: 120px;
+    height: 160px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+/* Contact Info Area */
+.ContactInfoArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+.ContactInfoTitle {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%;
+    height: 60px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+}
+.ContactsArea{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.AddressLabel,.ContactNumberLabel,.EmailLabel{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ContactNumberArea{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.SecondRow2{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ContactNumber,.email{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: start;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email{
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.ContactNumber{
+    border: 1px solid black;
+    width: 175px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 0 5px 5px 0;
+
+}
+.PhCode{
+    text-align: start;
+    margin-top: auto;   
+    margin-bottom: auto;
+    padding-left: 5px;
+    width: 33px;
+    height: 37px;
+    border: 1px solid black ;
+    border-right: none;
+    border-radius: 5px 0 0 5px;   
+    background: url('/images/Ph-Flag.png') no-repeat center;
+    background-size: 24px 24px;
+    background-color: white;
+}
+.Code{
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    padding-top: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 42px;
+    height: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    visibility: visible;
+    background-color: white;
+}
+.Address{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.HouseNumber{
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Street{
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Barangay{
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Municipality{
+    width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.Province{
+    width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+/* Account Info Area */
+.AccountInfoArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+.AccountInfoTitle{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%;
+    height: 50px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+}
+.AccountArea{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.UsernameLabel,.PasswordLabel,.ReTypePasswordLabel{
+    text-align: end;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.SecondRow3{
+    margin-left: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Username,.password{
+    width: 200px;
+    text-align: start;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.BtnArea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
+.Update{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.SettingsForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Upload Modal */
+.modal-backdrop.show{
+    display: none;
+}
+.form-label{
+    display: flex;
+    justify-content: center;
+}
+/* Delete Modal */
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}

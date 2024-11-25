@@ -29,9 +29,12 @@ class AccountsModel extends Authenticatable
         'ContactNumber',
         'Position',
         'Status',
+        'ActivityStatus',
         'username',
         'password',
         'profile_picture',
+        'OTP',                
+        'OTPduration',
     ];
     protected $hidden = [
         'password', 'remember_token',

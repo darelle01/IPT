@@ -23,9 +23,9 @@ class PatientListFilterController extends Controller
         $AgeBracket = $request->query('AgeBracket', null);
 
 
-        // $patientsIDs = patientrecord::select('PatientID')->get();
+       
         $PatientRecordQuery = patientrecord::query();
-        // $PatientMedicalLogsQuery = patientmedicallog::query();
+     
 
         if($FilterByGender === 'Male' || $FilterByGender === 'Female'){
             $PatientRecordQuery->where('Gender',$FilterByGender);
@@ -60,7 +60,7 @@ class PatientListFilterController extends Controller
         $patients=$PatientRecordQuery->get();
 
         $NoDataFound = $patients->isEmpty();
-
+        
         return view('AdminPages.PatientList', [
             'patients' => $patients,
             'NoDataFound' => $NoDataFound,

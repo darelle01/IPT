@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite(['resources/sass/app.scss','resources/js/app.js'])
     {{-- Bootstrap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> --}}
     {{-- Fontawesome --}}
-    <script src="https://kit.fontawesome.com/6d462838cf.js" crossorigin="anonymous"></script>
+    {{-- <script src="https://kit.fontawesome.com/6d462838cf.js" crossorigin="anonymous"></script> --}}
     {{-- Css --}}
     <link rel="stylesheet" href="{{asset('LoginCss/Background.css')}}">
     <link rel="stylesheet" href="{{asset('LoginCss/Dimesions.css')}}" >
@@ -63,8 +64,10 @@
                 </div>{{-- Btns Label --}}
 
                 {{-- Admin Login Form --}}
-                <form action="{{route('Login.Process')}}" method="POST" id="admin" class="AdminLoginForm">
+                {{-- {{route('Login.AdminProcess')}} --}}
+                <form action="{{route('Login.AdminProcess')}}" method="POST" id="admin" class="AdminLoginForm">
                     @csrf
+                    @method('POST')
                     <div class="AdminFormName">
                         Admin
                     </div>
@@ -74,8 +77,10 @@
                         <input type="password" name="password" class="AdminPassword" placeholder="Password *">
                     </div>
                     <div class="AdminLoginBtnArea">
-                        <button type="submit" class="AdminLoginBtn bg-primary">Login</button>
-                        <a href="" class="ForgotPassword">Forgot Password?</a>
+                        <button type="submit" class="btn btn-primary AdminLoginBtn">
+                            Login
+                          </button>
+                        <a href="{{route('Forgot.Password')}}" class="ForgotPassword">Forgot Password?</a>
                     </div>
                     <div class="AdminFormErrors">
                         @if ($errors->any())
@@ -88,12 +93,15 @@
                         </div>
                         @endif
                     </div>
+
+                      
                 </form>{{-- Admin Login Form --}}
 
                 
                 {{-- Staff Login Form --}}
-                <form action="" method="POST" id="staff"  class="StaffLoginForm">
+                <form action="{{route('Login.StaffProcess')}}" method="POST" id="staff"  class="StaffLoginForm">
                     @csrf
+                    @method('POST')
                     <div class="StaffFormName">
                         Staff
                     </div>

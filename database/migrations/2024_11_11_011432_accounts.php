@@ -36,10 +36,15 @@ return new class extends Migration
             
             $table->string('Position');
             $table->string('Status');
+            $table->string('ActivityStatus');
             
             $table->string('username')->unique();
             $table->string('password');
             $table->string('profile_picture')->nullable();
+
+           
+            $table->string('OTP')->nullable(); 
+            $table->timestamp('OTPduration')->nullable(); 
         });
     }
 

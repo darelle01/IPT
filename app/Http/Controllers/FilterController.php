@@ -36,13 +36,13 @@ class FilterController extends Controller
 
         if ($MedicalLogs->isEmpty()) {
             return redirect()->back()->with('no_data', 'No data found.');
-        }
+        } 
         
         $EncryptMedicalLogs = Crypt::encrypt($MedicalLogs);
         session(['EncryptMedicalLogs' => $EncryptMedicalLogs,
                 'FilterByConsultation',$FilterByConsultation]);
 
-        // return view('AdminPages.MedicalLogs', compact('MedicalLogs'))->with('getAllConsultation', $getAllConsultation);
-        return redirect()->route('Admin.ViewMedicalLogsRecords');
+        
+        return redirect()->route('Admin.ViewMedicalLogsRecords',['data' => urlencode($EncryptMedicalLogs), 'data2' => urlencode($FilterByConsultation), 'data3' => urlencode($getAllConsultation)]);
     }
 }

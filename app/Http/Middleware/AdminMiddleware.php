@@ -14,20 +14,25 @@ class AdminMiddleware
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next, string $Position): Response
+    public function handle(Request $request, Closure $next,$guards): Response
     {
-        if (Auth::check()) 
-        {
-            if (Auth::user()->Position === $Position) 
-            {
+        
+        if (Auth::check()) {
+            if (Auth::user()->Position === 'Admin') {
                 return $next($request);
+            }
+            elseif (Auth::user()->Position === 'Staff') {
+                return redirect()->back()->withErrors(['Not-Authorized' => 'Use the right login form.']);
             }
             else{
                 return redirect()->route('Login')->withErrors(['Not-Authorized' => 'You are not authorize to access this.']);
             }
         }
+        elseif (!Auth::guard($guards)->check()) {
+            return redirect()->route('Login');
+        }
         else
-        {   
+        {
             return redirect()->route('Login');
         }
         

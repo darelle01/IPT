@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/sass/app.scss','resources/js/app.js'])
     {{-- Bootstrap --}}
@@ -28,7 +28,6 @@
 
         <form action="{{route('Admin.Result')}}" method="GET" class="SearchBarArea">
             @csrf
-            
             <input type="text" name="Search" class="SearchBox" placeholder="Search" autocomplete="on">
             <button type="submit" class="SearchBtn">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -44,9 +43,9 @@
             <div class="LogoArea">
                 
             </div>
-            <div class="ProfilePictureArea">
+            <div class="ProfilePictureArea1">
                 @if (Auth::user()->profile_picture)
-                <img src="{{ asset('storage/' . Auth::user()->profile_picture) }}" alt="Profile Picture" class="profilepicture">
+                <img src="{{ asset('storage/' . Auth::user()->profile_picture) }}" alt="Profile Picture" class="profilepicture1">
                 @else
                 <p>No profile picture available.</p>
                 @endif
@@ -70,7 +69,7 @@
                 </button>
             </div>
             <div class="AccountListArea">
-                <button class="AccountList">
+                <button class="AccountList" onclick="redirectToAccountList()">
                     <i class="fa-solid fa-users-rectangle"></i>
                     <span class="ButtonName">Account List</span>
                 </button>
@@ -94,14 +93,18 @@
                 </button>
             </div>
             <div class="contain">
-                <div class="SettingsArea">
-                    <button class="Settings">
+                <form action="{{route ('RedirectTo.Settings')}}" method="GET" class="SettingsArea">
+                    @csrf
+                    @method('GET')
+                    <button type="submit" class="Settings" name="SettingsPage" value="{{Auth::user()->username}}"> 
                         <i class="fa-solid fa-gear"></i>
                         <span class="ButtonName">Setting</span>
                     </button>
-                </div>  
+                </form>  
                 <div class="LogoutArea">
-                    <form action="{{route('Log-Out')}}" class="">
+                    <form action="{{route('Log-Out')}}" method="POST" class="LogoutArea">
+                        @csrf
+                        @method('POST')
                         <button class="Logout">
                             <i class="fa-solid fa-right-from-bracket"></i>
                             <span class="ButtonName">Logout</span>
@@ -135,7 +138,9 @@
     <script src="{{asset('/javascript/Sidebar.js')}}" ></script>
     <script src="{{asset('/javascript/AdminBtn/AdminDashboardBtn.js')}}" ></script>
     <script src="{{asset('/javascript/AdminBtn/AdminCreateAccountBtn.js')}}" ></script>
+    <script src="{{asset('/javascript/AdminBtn/AccountListBtn.js')}}" ></script>
     <script src="{{asset('/javascript/AdminBtn/AdminNewPatientBtn.js')}}" ></script>
     <script src="{{asset('/javascript/AdminBtn/PatientListBtn.js')}}" ></script>
     <script src="{{asset('/javascript/AdminBtn/AddProgramBtn.js')}}" ></script>
+    <script src="{{asset('/javascript/AdminBtn/Settings.js')}}" ></script>
 </html>

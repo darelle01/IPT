@@ -23,6 +23,6 @@ class ViewPatientRecordController extends Controller
         }
         $EncryptedpatientsBasicInfo = Crypt::encrypt($patientsBasicInfo);
         session(['EncryptedpatientsBasicInfo' => $EncryptedpatientsBasicInfo]);
-        return redirect()->route('Admin.patientFullView')->with('getAllConsultation', $getAllConsultation);
+        return redirect()->route('Admin.patientFullView', ['data' => urlencode($EncryptedpatientsBasicInfo), 'data2' => urlencode($getAllConsultation)]);
     }
 }

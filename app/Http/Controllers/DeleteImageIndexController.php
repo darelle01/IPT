@@ -41,7 +41,7 @@ class DeleteImageIndexController extends Controller
             session(['EncryptfilePaths' => $EncryptfilePaths,
                     'PatientNumber' => $PatientNumber,
                     'id' => $id]);
-            return redirect()->route('Admin.ViewMedicalRecords')->with('Delete', 'Images Deleted successfully!');
+            return redirect()->route('Admin.ViewMedicalRecords',['data' => urlencode($EncryptfilePaths), 'data2' => urlencode($PatientNumber), 'data3' => urlencode($id)])->with('Delete', 'Images Deleted successfully!');
     }
 
 }

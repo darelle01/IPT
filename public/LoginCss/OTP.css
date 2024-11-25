@@ -1,0 +1,77 @@
+.OTPContainer{
+    margin-top: 20px;
+    width: 900px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+}
+.OTPForm{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 30px;
+}
+.OTPLabelArea{
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+.OTPLAbel{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.OTPInput{
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+.OTPValue{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+.OTPBtnArea{
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+.OTPBtn{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.OTPerror{
+    display: flex;
+    margin-top: 10px;
+}
+.alert-danger{
+    text-align: center;
+    width: 98%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

@@ -23,6 +23,6 @@ class SeemoreBtnController extends Controller
         }
         $EncryptedpatientsBasicInfo = Crypt::encrypt($patientsBasicInfo);
         session(['EncryptedpatientsBasicInfo' => $EncryptedpatientsBasicInfo]);
-        return redirect()->route('Admin.patientFullView')->with('getAllConsultation', $getAllConsultation);
+        return redirect()->route('Admin.patientFullView',['data' => urlencode($EncryptedpatientsBasicInfo)])->with('getAllConsultation', $getAllConsultation);
     }
 }

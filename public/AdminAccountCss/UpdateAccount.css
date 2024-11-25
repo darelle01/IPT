@@ -1,0 +1,853 @@
+.Mid{
+    display: flex;
+    width: 80%;
+    height: 99vh;
+}
+.UpdateAccountForm{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 1050px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.FormNameArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
+}
+h2{
+    margin-left: 50px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+/* ================================================================= */
+/* Title Area */
+.BasicInfoArea,.AddressAndContactArea,.AccountInformationArea{
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(93, 214, 56, 0.671);
+}
+.BasicInfoLabel,.AddressAndContactLabel,.AccountInformationLabel{
+    display: flex;
+}
+h3{
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Basic Information 1 */
+.BasicInfoInputArea,.AddressAndContactInputArea,.AccountInformationInputArea{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Last Name Area */
+.LastNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.LastNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.LastName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}   
+.LastName::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.LastNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.LastName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* First Name Area */
+.FirstNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.FirstNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.FirstName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.FirstName::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.FirstNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.FirstName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Middle Name Area */
+.MiddleNameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.MiddleNameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.MiddleName{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Middle::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.MiddleNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.MiddleName-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Basic Information 2 */
+.BasicInfoInputArea2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Birthdate Area */
+.BirthdateArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.BirthdateInput{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+.BirthdateLabel{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.Birthdate{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    width: 150px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.BirthdateMiddleNameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Birthdate-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Age Area */
+.AgeArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 80px;
+}
+.AgeInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Age{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 100px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Age::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.AgeErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Age-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Gender Area */
+.GenderArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.GenderInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Gender{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 130px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Gender::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.GenderErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Gender-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area */
+.AddressAndContactInputArea{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* House Number Area */
+.HouseNumberArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.HouseNumberInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.HouseNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.HouseNumber::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.HouseNumberErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.HouseNumber-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Street Area */
+.StreetArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.StreetInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Street{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Street::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.StreetErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Street-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Barangay Area */
+.BarangayArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.BarangayInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Barangay{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Barangay::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.BarangayErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Barangay-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area 2*/
+.AddressAndContactInputArea2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Municipality Area */
+.MunicipalityArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.MunicipalityInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Municipality{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.Municipality::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.MunicipalityErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Municipality-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* Province Area */
+.ProvinceArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.ProvinceInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.Province{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+.Province::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.ProvinceErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.Province-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Address and Contacts Input Area 3*/
+.AddressAndContactInputArea3{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+/* Contact Area */
+.ContactArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.ContactInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.ContactNumber{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    width: 175px;
+    height: 33px;
+    border: 1px solid black ;
+    border-radius:0 5px 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: visible;
+}
+.ContactNumber:focus{
+    outline: none;
+}
+.PhCode{
+    margin-top: auto;   
+    margin-bottom: auto;
+    margin-left: 50px;
+    padding-left: 5px;
+    width: 33px;
+    height: 33px;
+    border: 1px solid black ;
+    border-right: none;
+    border-radius: 5px 0 0 5px;   
+    background: url('/images/Ph-Flag.png') no-repeat center;
+    background-size: 23px 20px;
+    background-color: white;
+}
+.Code{
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 42px;
+    height: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    visibility: visible;
+    background-color: white;
+}
+.ContactNumber::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.ContactErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.ContactNumber-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+
+/* email Area */
+.emailArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.emailInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.email{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.email::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.emailErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.email-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* ================================================================= */
+/* username Area */
+.usernameArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.usernameInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.username{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.username::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.usernameErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.username-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* password Area */
+.passwordArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+}
+.passwordInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.password{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 33px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.password::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.passwordErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.password-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+.direction{
+    padding-left: 50px;
+    font-size: 13px;
+}
+/* profile_picture Area */
+.profile_pictureArea{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 80px;
+}
+.profile_pictureInputArea{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.profile_picture{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 35px;
+    border: solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.profile_picture::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.profile_pictureErrorArea{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+.profile_picture-error{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    color: red;
+}
+/* Update Btn Area */
+.UpdateBtnArea{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+.Update{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.Update:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.flag--ph-4x3 {
+    display: inline-block;
+    width: 1.34em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 480'%3E%3Cpath fill='%230038a8' d='M0 0h640v240H0z'/%3E%3Cpath fill='%23ce1126' d='M0 240h640v240H0z'/%3E%3Cpath fill='%23fff' d='M415.7 240L0 480V0'/%3E%3Cpath fill='%23fcd116' d='M26.7 42.4L41 55l16.6-9.2l-7.4 17.5l14 13l-19-1.6l-8.1 17.2l-4.3-18.5L14 71l16.3-10zm323.8 172.3l.4 19l18 6.3l-18 6.2l-.4 19l-11.5-15.1l-18.2 5.5l10.8-15.6l-10.8-15.6l18.2 5.5zM37.2 388.1l8 17.2l19-1.6l-13.9 13l7.4 17.5l-16.6-9.1l-14.4 12.4l3.6-18.7L14 409l18.9-2.4zm114.2-249l-6.2 6.2l3.1 47l-3 .3l-5.7-42.9l-5.1 5l7.6 38.4a47.5 47.5 0 0 0-17.2 7.1l-21.7-32.4H96l26.4 34.3a48 48 0 0 0-2.4 2l-31.1-35.5h-8.8v8.8l35.4 31l-2 2.5l-34.3-26.3v7.1l32.5 21.7c-3.4 5.2-5.9 11-7.1 17.2L66.3 223l-5.1 5l42.9 5.7c-.2 1-.3 2.1-.3 3.1l-47-3l-6.2 6.2l6.2 6.2l47-3.1l.3 3.1l-42.9 5.7l5 5l38.4-7.6a47.5 47.5 0 0 0 7.1 17.2l-32.5 21.7v7.2l34.3-26.3a48 48 0 0 0 2 2.4l-35.4 31v8.8H89l31-35.4l2.5 2L96 312.2h7.2l21.7-32.5c5.1 3.4 11 5.9 17.2 7.1l-7.6 38.4l5 5l5.7-42.9c1 .2 2 .3 3.1.3l-3 47l6.1 6.2l6.3-6.2l-3.1-47l3-.3l5.7 43l5.1-5.1l-7.6-38.4a47.5 47.5 0 0 0 17.2-7.1l21.7 32.5h7.2l-26.4-34.3a48 48 0 0 0 2.4-2l31.1 35.4h8.8v-8.8l-35.4-31l2-2.4l34.3 26.3v-7.2l-32.5-21.7c3.4-5.1 5.9-11 7.1-17.2l38.3 7.6l5.1-5l-42.9-5.7c.2-1 .3-2 .3-3.1l47 3l6.2-6.1l-6.2-6.2l-47 3l-.3-3l42.9-5.7l-5-5l-38.4 7.5a47.5 47.5 0 0 0-7.1-17.2l32.5-21.7v-7.1l-34.3 26.3a48 48 0 0 0-2-2.4l35.4-31v-8.9H214l-31 35.5a48 48 0 0 0-2.5-2l26.4-34.3h-7.2L178 200.2c-5.1-3.4-11-5.9-17.2-7.1l7.6-38.3l-5-5l-5.7 42.8l-3.1-.3l3-47z'/%3E%3C/svg%3E");
+  }
+  /* Input box Focus */
+  .LastName,.FirstName,.MiddleName,.Birthdate,.Age,.Gender:focus{
+    outline: none;
+  }
+  .HouseNumber,.Street,.Barangay,.Municipality,.Province:focus{
+    outline: none;
+  }
+  .Contact,.email,.username,.password,.profile_picture:focus{
+    outline: none;
+  }
+
+  .alert-success{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }

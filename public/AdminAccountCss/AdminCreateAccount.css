@@ -18,10 +18,10 @@
 .FormNameArea{
     display: flex;
     flex-direction: column;
-        width: 100%;
-        height: 60px;
-        border-radius: 10px 10px 0 0;
-        background-color: #00A3FF;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00A3FF;
 }
 h2{
     margin-left: 50px;
